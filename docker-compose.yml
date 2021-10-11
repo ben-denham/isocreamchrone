@@ -1,0 +1,6 @@
+version: '3.0'
+services:
+  graphhopper:
+    build: graphhopper
+    ports:
+      - '8989:8989'

@@ -11,6 +11,10 @@ API](https://www.graphhopper.com/blog/2018/09/17/graphhopper-routing-engine-0-11
 inspired by
 https://thespinoff.co.nz/society/11-10-2021/travel-times-to-every-suburbs-closest-vaccination-centre-on-one-interactive-map/.
 
+![Example map demonstrating that Westland is far from vaccination
+centres, while areas around Christchurch are close to vaccination
+centres](example.png)
+
 ## Usage
 
 * Install dependencies:

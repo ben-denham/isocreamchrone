@@ -4,3 +4,21 @@ services:
     build: graphhopper
     ports:
       - '8989:8989'
+    volumes:
+      - ./data:/graphhopper/data
+    command: >
+      java -Xmx4g -Xms4g
+      -Ddw.server.application_connectors[0].bind_host=0.0.0.0
+      -Ddw.server.application_connectors[0].port=8989
+      -Ddw.graphhopper.datareader.file=/graphhopper/data/new-zealand-latest.osm.pbf
+      -Ddw.graphhopper.graph.location=/graphhopper/data/default-gh
+      -jar graphhopper-web-2.0-SNAPSHOT.jar server config.yml
+  jupyter:
+    build: jupyter
+    ports:
+      - '8080:8888'
+    volumes:
+      - ./data:/data
+      - ./jupyter:/home/jovyan/work
+    environment:
+      TZ: Pacific/Auckland

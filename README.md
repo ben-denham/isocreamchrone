@@ -1,7 +1,7 @@
 # Isocreamchrone
 
 **View the map of travel times to vaccination centres here:
-https://htmlpreview.github.io/?https://github.com/ben-denham/isocreamchrone/blob/master/jupyter/notebooks/isocreamchrone.html**
+https://ben-denham.github.io/isocreamchrone**
 
 Isocreamchrone is a tool for creating isochrone maps that show how
 long it would take to get from any point on a map to one of a set of
